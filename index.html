@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Register | Regi</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <a href="/">Regi</a>
+  </header>
+
+  <main>
+    <section>
+      <h1>Become a Regi Member</h1>
+      <p class="sub-title">Create your Regi profile and get first access to the very best of Regi products, inspiration
+        and community
+      </p>
+      <form id="reg-form" method="post" action="/login.html">
+        <div class="names">
+          <label for="firstname">First Name</label>
+          <input id="firstname" type="text" name="firstname" placeholder="First Name" required />
+          <label for="lastname">Last Name</label>
+          <input id="lastname" type="text" name="lastname" placeholder="Last Name" required />
+        </div>
+        <label for="phone">Phone Number</label>
+        <input id="phone" type="tel" name="phone" placeholder="Phone Number" required />
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Email" required />
+
+        <select name="gender" id="gender" form="reg-form" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <label for="date">Date of birth</label>
+        <input id="date" type="date" name="date" placeholder="Date of Birth" required />
+        <div class="color">
+          <label for="color">Favorite Color</label>
+          <input id="color" value="#fff2ff" type="color" name="color" placeholder="Favorite Color" />
+        </div>
+        <label for="password"></label>
+        <input id="password" type="password" name="password" placeholder="Password" required min="3" />
+        <label for="cpassword"></label>
+        <input id="cpassword" type="cpassword" name="cpassword" placeholder="Confirm Password" required min="3" />
+
+
+        <button type="submit" class="submit">Submit</button>
+
+        <p>already have an account? <a href="/login.html">Login</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; precious 2022
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

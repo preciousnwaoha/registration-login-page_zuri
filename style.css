@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Klee+One&display=swap');
+
+
+:root {
+  --dark-700: rgb(17, 17, 17);
+  --light-700: #ffffff;
+  --font1: 'Bangers', cursive;
+  --font2: 'Klee One', cursive;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: var(--dark-700);
+  font-family: var(--font2);
+}
+
+*, *::after, *::before {
+  box-sizing: border-box
+}
+
+
+header {
+  background: var(--dark-700);
+  padding: 1rem;
+  color: var(--light-700);
+  text-transform: uppercase;
+  font-family: var(--font1);
+  height: 52px;
+  display: flex;
+  align-items: center;
+/*   justify-content: center; */
+}
+
+main {
+  min-height: calc(100vh - 52px - 20px);
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--font1);
+  text-transform: uppercase;
+}
+
+.button {
+  cursor: pointer;
+}
+
+section {
+  text-align: center;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+
+form {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+}
+
+form label:not(.color label) {
+    display: none;
+}
+
+input {
+  width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    outline: none;
+    background: transparent;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 8px;
+    
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-text-fill-color: var(--dark-700) !important;
+    -webkit-background-clip: text;
+}
+
+
+
+
+.names {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+}
+
+
+
+select {
+  padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    outline: none;
+    background: transparent;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 8px
+}
+
+
+select:-webkit-autofill,
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus, 
+select:-webkit-autofill:active{
+    -webkit-text-fill-color: var(--secondary) !important;
+    -webkit-background-clip: text;
+}
+
+.color label{
+  margin-top: 0.5rem;
+  display: inline-block;
+}
+
+.color input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  height: 60px;
+  border: none;
+  
+}
+
+.color input::-webkit-color-swatch {
+  border-radius: 8px;
+  border: 1px solid var(--dark-700);
+  background: var(--dark-700);
+}
+.color input::-moz-color-swatch {
+  border-radius: 8px;
+  border: 1px solid var(--dark-700);
+}
+
+.submit {
+  background: var(--dark-700);
+  padding: 0.75rem 1rem;
+  font-family: var(--font1);
+  border: none;
+  text-transform: uppercase;
+  color: var(--light-700);
+  margin: 1rem 0;
+}
+
+form p {
+  font-size: 0.75rem;
+  text-align: center;
+  
+}
+
+form p a {
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+.explore {
+  background: var(--dark-700);
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  font-family: var(--font1);
+  border: none;
+  text-transform: uppercase;
+  color: var(--light-700);
+  margin: 1rem auto;
+}
+
+
+footer {
+  height: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+
+@media screen and (min-width: 760px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(236, 216, 236);
+  }
+    section {
+      max-width: 500px;
+      background: var(--light-700);
+      padding: 1.5rem;
+    }
+}
